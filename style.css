@@ -11,7 +11,7 @@ article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section {
 display:block;
 }
 
-html, body {background: #00ff00; font-family: 'Lato', helvetica, arial, sans-serif; font-size: 16px; color: #222;}
+html, body {background: #FFFFFF; font-family: 'Lato', helvetica, arial, sans-serif; font-size: 16px; color: #222;}
 
 .clear {clear: both;}
 
@@ -26,7 +26,6 @@ p {
 	width: 90%;
 	max-width: 800px;
 	background: #f3f3f3;
-	margin: 30px auto;
 }
 
 .mainDetails {
@@ -352,4 +351,12 @@ section:last-child {
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
+}
+
+.over-the-nest {
+	position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+	opacity: 0.9;
 }
