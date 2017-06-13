@@ -8,6 +8,7 @@
 <meta charset="UTF-8">
 
 <link type="text/css" rel="stylesheet" href="style.css">
+<link type="text/css" rel="stylesheet" href="particles.css">
 <link href='http://fonts.googleapis.com/css?family=Rokkitt:400,700|Lato:400,300' rel='stylesheet' type='text/css'>
 
 <!--[if lt IE 9]>
@@ -15,10 +16,10 @@
 <![endif]-->
 </head>
 <body id="top">
-<script type="text/javascript" color="0,0,0" opacity='0.7' zIndex="0" count="200" src="canvas-nest.js"></script>
+<script type="text/javascript" color="255,255,255" opacity='0.7' zIndex="1" count="150" src="canvas-nest.js"></script>
 <div id="container" style="z-index:0; position: absolute; opacity: 0.7">
 </div>
-<script src="sketch.js"></script>
+<!-- <script src="sketch.js"></script>
 <script>
 	function Particle( x, y, radius ) {
 	    this.init( x, y, radius );
@@ -154,8 +155,8 @@
 	    }
 	};
 
-</script>
-<div id="cv" style="z-index:0;" class="instaFade over-the-nest">
+</script> -->
+<div id="cv" style="z-index:20;" class="instaFade over-the-nest">
 
 	<div id="" class="mainDetails">
 		<div id="name">
@@ -255,5 +256,6 @@
 
 	</div>
 </div>
+<script src="particles.js"> </script>
 </body>
 </html>
