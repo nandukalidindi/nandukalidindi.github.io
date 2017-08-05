@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Nanda Kishore - Resume</title>
+
+<meta name="viewport" content="width=device-width"/>
+<meta name="description" content="The Curriculum Vitae of Joe Bloggs."/>
+<meta charset="UTF-8">
+
+<link type="text/css" rel="stylesheet" href="style.css">
+<link type="text/css" rel="stylesheet" href="particles.css">
+<link href="https://fonts.googleapis.com/css?family=Quantico" rel="stylesheet">
+
+<!--[if lt IE 9]>
+<script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+</head>
+<body id="top">
+<script type="text/javascript" color="255,255,255" opacity='0.7' zIndex="1" count="150" src="canvas-nest.js"></script>
+<div id="container" style="z-index:0; position: absolute; opacity: 0.7">
+</div>
+<!-- <script src="sketch.js"></script>
+<script>
+	function Particle( x, y, radius ) {
+	    this.init( x, y, radius );
+	}
+
+	Particle.prototype = {
+
+	    init: function( x, y, radius ) {
+
+	        this.alive = true;
+
+	        this.radius = radius || 10;
+	        this.wander = 0.15;
+	        this.theta = random( TWO_PI );
+	        this.drag = 0.92;
+	        this.color = '#fff';
+
+	        this.x = x || 0.0;
+	        this.y = y || 0.0;
+
+	        this.vx = 0.0;
+	        this.vy = 0.0;
+	    },
+
+	    move: function() {
+
+	        this.x += this.vx;
+	        this.y += this.vy;
+
+	        this.vx *= this.drag;
+	        this.vy *= this.drag;
+
+	        this.theta += random( -0.5, 0.5 ) * this.wander;
+	        this.vx += sin( this.theta ) * 0.1;
+	        this.vy += cos( this.theta ) * 0.1;
+
+	        this.radius *= 0.96;
+	        this.alive = this.radius > 0.5;
+	    },
+
+	    draw: function( ctx ) {
+
+	        ctx.beginPath();
+	        ctx.arc( this.x, this.y, this.radius, 0, TWO_PI );
+	        ctx.fillStyle = this.color;
+	        ctx.fill();
+	    }
+	};
+
+	// ----------------------------------------
+	// Example
+	// ----------------------------------------
+
+	var MAX_PARTICLES = 280;
+	var COLOURS = [ '#69D2E7', '#A7DBD8', '#E0E4CC', '#F38630', '#FA6900', '#FF4E50', '#F9D423' ];
+
+	var particles = [];
+	var pool = [];
+
+	var demo = Sketch.create({
+	    container: document.getElementById( 'container' ),
+	    retina: 'auto'
+	});
+
+	demo.setup = function() {
+
+	    // Set off some initial particles.
+	    var i, x, y;
+
+	    for ( i = 0; i < 20; i++ ) {
+	        x = ( demo.width * 0.5 ) + random( -100, 100 );
+	        y = ( demo.height * 0.5 ) + random( -100, 100 );
+	        demo.spawn( x, y );
+	    }
+	};
+
+	demo.spawn = function( x, y ) {
+
+	    var particle, theta, force;
+
+	    if ( particles.length >= MAX_PARTICLES )
+	        pool.push( particles.shift() );
+
+	    particle = pool.length ? pool.pop() : new Particle();
+	    particle.init( x, y, random( 5, 40 ) );
+
+	    particle.wander = random( 0.5, 2.0 );
+	    particle.color = random( COLOURS );
+	    particle.drag = random( 0.9, 0.99 );
+
+	    theta = random( TWO_PI );
+	    force = random( 2, 8 );
+
+	    particle.vx = sin( theta ) * force;
+	    particle.vy = cos( theta ) * force;
+
+	    particles.push( particle );
+	};
+
+	demo.update = function() {
+
+	    var i, particle;
+
+	    for ( i = particles.length - 1; i >= 0; i-- ) {
+
+	        particle = particles[i];
+
+	        if ( particle.alive ) particle.move();
+	        else pool.push( particles.splice( i, 1 )[0] );
+	    }
+	};
+
+	demo.draw = function() {
+
+	    demo.globalCompositeOperation  = 'lighter';
+
+	    for ( var i = particles.length - 1; i >= 0; i-- ) {
+	        particles[i].draw( demo );
+	    }
+	};
+
+	demo.mousemove = function() {
+
+	    var particle, theta, force, touch, max, i, j, n;
+
+	    for ( i = 0, n = demo.touches.length; i < n; i++ ) {
+
+	        touch = demo.touches[i], max = random( 1, 4 );
+	        for ( j = 0; j < max; j++ ) {
+	          demo.spawn( touch.x, touch.y );
+	        }
+
+	    }
+	};
+
+</script> -->
+<div id="cv" style="z-index:20; overflow-y: scroll; height: 100%" class="instaFade over-the-nest">
+
+	<div id="" class="mainDetails">
+		<div id="name">
+			<h1 class="quickFade delayTwo">Nanda Kishore Kalidindi</h1>
+		</div>
+
+		<div id="contactDetails" class="quickFade delayFour">
+			<ul>
+				<li>Email: <a href="mailto:nkk236@nyu.edu" target="_blank">nkk263@nyu.edu</a></li>
+				<li>Mobile: <a href="http://www.bloggs.com">+1 (718) 679-7382</a></li>
+			</ul>
+		</div>
+		<div class="clear"></div>
+	</div>
+
+	<div id="mainArea" class="quickFade delayFive">
+		<section>
+			<div class="sectionTitle">
+				<h1>Education</h1>
+			</div>
+
+			<div class="sectionContent">
+				<div class="flex-row">
+					<h2>New York University, Tandon School of Engineering</h2> <p class="subDetails"> August 2016 - May 2018</p>
+				</div>
+				<p class="subDetails">M.S in Computer Science (3.72/4.0)</p>
+			</br>
+				<div class="flex-row">
+					<h2>Birla Institute of Technology and Sciences, Hyderabad</h2> <p class="subDetails">August 2010 - May 2014</p>
+				</div>
+				<p class="subDetails">B.E in Computer Science (7.1/10.0)</p>
+			</div>
+			<div class="clear"></div>
+		</section>
+
+		<section>
+			<div class="sectionTitle">
+				<h1>Work Experience</h1>
+			</div>
+
+			<div class="sectionContent">
+				<div class="flex-row">
+					<h2>NYU Mechanical and Aerospace Engineering Department, New York</h2>
+					<p class="subDetails">Jan 2017 - Present</p>
+				</div>
+
+				<div class="flex-row">
+					<h2>Revmax, New York</h2>
+					<p class="subDetails">Dec 2016 - Present</p>
+				</div>
+
+				<div class="flex-row">
+					<h2>Kaybus Inc, Bengaluru</h2>
+					<p class="subDetails">Jun 2014 - Jul 2016</p>
+				</div>
+
+				<div class="flex-row">
+					<h2>Sabre Corporation, Bengaluru</h2>
+					<p class="subDetails">Jul 2013 - Dec 2013</p>
+				</div>
+
+				<div class="flex-row">
+					<h2>Navyug Infosolutions, Noida</h2>
+					<p class="subDetails">May 2013 - Jun 2013</p>
+				</div>
+
+				<div class="flex-row">
+					<h2>Indian Overseas Bank, Chennai</h2>
+					<p class="subDetails">May 2012 - Jul 2012</p>
+				</div>
+			</div>
+			<div class="clear"></div>
+		</section>
+
+
+		<section>
+			<div class="sectionTitle">
+				<h1>Key Skills</h1>
+			</div>
+
+			<div class="sectionContent">
+				<ul class="keySkills">
+					<li>Ruby</li>
+					<li>Javascript</li>
+					<li>C</li>
+					<li>C++</li>
+					<li>Python</li>
+					<li>Java</li>
+					<li>Ruby on Rails</li>
+					<li>EmberJS</li>
+					<li>ReactJS</li>
+					<li>OpenGL/GLSL</li>
+				</ul>
+			</div>
+			<div class="clear"></div>
+		</section>
+
+	</div>
+</div>
+<script src="particles.js"> </script>
+</body>
+</html>
