@@ -61,14 +61,13 @@ class TextScramble {
 // ——————————————————————————————————————————————————
 
 const phrases = [
-  // "Namaste! </br>" +
+  "Namaste! </br>"
   // "</br>" +
   // "Hello there!</br>" +
   // "I am Nanda Kishore, a software enthusiast.</br>" +
   // "I like to bring code to life (sounds scary ain't it but I am not quite there yet)</br>" +
   // "I try to write beautiful code (**coughs**) </br>" +
   // "I try to visualize the code I write to as much extent as possible which is probably why I try to get into Frontend as much as possible even if given a backend task (boundary cross alert!)"
-  "WORK IN PROGRESS"
 
 ];
 
