@@ -400,8 +400,14 @@ body {
   to{border-right-color: transparent;}
 }
 
+.project-li {
+  width: 33.33%;
+  height: 300px;
+}
+
 .project-listing {
   border: 1px solid;
+  height: 100%;
   padding: 20px;
   text-align: left;
 }
@@ -412,4 +418,5 @@ body {
 
 .project-link {
   margin-bottom: 0px;
+  cursor: pointer;
 }
