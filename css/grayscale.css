@@ -400,6 +400,12 @@ body {
   to{border-right-color: transparent;}
 }
 
+.project-ul {
+  display: flex;
+  list-style: none;
+  padding-left: 0px;
+}
+
 .project-li {
   width: 33.33%;
   height: 300px;
@@ -428,4 +434,9 @@ body {
 
 .project-title {
   display: flex;
+}
+
+.framework-icons {
+  width: 30px;
+  height: 30px;
 }
