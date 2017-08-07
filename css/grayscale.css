@@ -412,11 +412,20 @@ body {
   text-align: left;
 }
 
+.project-listing h4 {
+  margin-bottom: 10px;
+}
+
 .project-description {
   font-size: 16px;
+  height: 60%;
 }
 
 .project-link {
   margin-bottom: 0px;
   cursor: pointer;
+}
+
+.project-title {
+  display: flex;
 }
