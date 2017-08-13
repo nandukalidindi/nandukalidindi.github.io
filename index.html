@@ -1,5 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
+<meta charset="utf-8">
+
+<style>
+
+path {
+  stroke: #fff;
+}
+
+</style>
 
 <head>
 
@@ -33,6 +42,7 @@
 </head>
 
 <body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
+  <script src="js/d3.v3.min.js"></script>
   <!-- <script type="text/javascript" color="255,255,255" opacity='1.0' zIndex="1" count="150" src="js/canvas-nest.js"></script> -->
   <!-- <div id="container" style="z-index:0; position: absolute; opacity: 0.7"></div> -->
   <!-- <div class="scramble-text"></div> -->
@@ -159,25 +169,55 @@
 
     <!-- Contact Section -->
     <section id="experience" class="container content-section text-center">
-        <!-- <div class="row">
-            <div class="col-lg-8 col-lg-offset-2">
-                <h2>Contact Start Bootstrap</h2>
-                <p>Feel free to email us to provide some feedback on our templates, give us suggestions for new templates and themes, or to just say hello!</p>
-                <p><a href="mailto:feedback@startbootstrap.com">feedback@startbootstrap.com</a>
-                </p>
-                <ul class="list-inline banner-social-buttons">
-                    <li>
-                        <a href="https://twitter.com/SBootstrap" class="btn btn-default btn-lg"><i class="fa fa-twitter fa-fw"></i> <span class="network-name">Twitter</span></a>
-                    </li>
-                    <li>
-                        <a href="https://github.com/IronSummitMedia/startbootstrap" class="btn btn-default btn-lg"><i class="fa fa-github fa-fw"></i> <span class="network-name">Github</span></a>
-                    </li>
-                    <li>
-                        <a href="https://plus.google.com/+Startbootstrap/posts" class="btn btn-default btn-lg"><i class="fa fa-google-plus fa-fw"></i> <span class="network-name">Google+</span></a>
-                    </li>
+      <div class="row" style="position: relative" id="experience-container">
+        <!-- <div id="experience-snippet" style="display:block">
+          EXPERIENCE
+        </div>
+        <script src="js/label-d3.js"></script> -->
+        <div class="container">
+            <div>
+                <h2>PROFESSIONAL EXPERIENCE</h2>
+                <ul style="list-style:none; padding-left: 0px">
+                  <li class="listing">
+                    <div style="width: 20%">
+                      <img src="img/nyu-horizontal.png" style="width: 150px"></img>
+                    </div>
+                  </li>
+                  <li class="listing">
+                    <div style="width: 20%">
+                      <img src="img/nyu-horizontal.png" style="width: 150px"></img>
+                    </div>
+                  </li>
+                  <li class="listing">
+                    <div style="width: 20%">
+                      <img src="img/revmax.jpg" style="width:150px;"></img>
+                    </div>
+                  </li>
+                  <li class="listing">
+                    <div style="width: 20%">
+                      <img src="img/kaybus.png" style="width: 150px"></img>
+                    </div>
+                  </li>
+                  <li class="listing">
+                    <div style="width: 20%">
+                      <img src="img/sabre.png" style="width: 150px"></img>
+                    </div>
+                  </li>
+                  <li class="listing">
+                    <div style="width: 20%">
+                      <img src="img/navyug.png" style="width: 150px"></img>
+                    </div>
+                  </li>
+                  <li class="listing">
+                    <div style="width: 20%">
+                      <img src="img/iob.png" style="width: 150px"></img>
+                    </div>
+                  </li>
                 </ul>
             </div>
-        </div> -->
+        </div>
+
+      </div>
     </section>
 
     <section id="projects" class="container content-section text-center">
@@ -255,7 +295,8 @@
             <div class="project-listing">
               <div class="project-title">
                 <h4>Algorithms</h4>
-                <img class="framework-icons" style="width: 35px; height: 35px" alt="Ruby" title="Ruby" src="img/ruby.png" />
+                <img class="framework-icons" style="width: 45px; height: 45px" alt="Ruby" title="Ruby" src="img/ruby.png" />
+                <img class="framework-icons" style="width: 35px; height: 35px" alt="TravisCI" title="TravisCI" src="img/travis.png" />
               </div>
               <p class="project-description">
                 Ruby implementation of various algorithms from CLRS.
