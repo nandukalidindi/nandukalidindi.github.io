@@ -18,8 +18,16 @@ jQuery(document).ready(function($){
 			timelineComponents['timelineNavigation'] = timeline.find('.cd-timeline-navigation');
 			timelineComponents['eventsContent'] = timeline.children('.events-content');
 
-			//assign a left postion to the single events along the timeline
+			// skillComponents = {};
+			// skillComponents['parent'] = timeline.find('#skill-bars');
+			// skillComponents['skills'] = skillComponents['parent'].children('.skill');
+			// skillComponents['dates'] = parseDate(skillComponents['skills']);
+			// skillComponents['minLapse'] = minLapse(skillComponents['dates']);
+			//
+			// //assign a left postion to the single events along the timeline
 			setDatePosition(timelineComponents, eventsMinDistance);
+			//
+			// setSkillPositions(skillComponents);
 			//assign a width to the timeline
 			var timelineTotWidth = setTimelineWidth(timelineComponents, eventsMinDistance);
 			//the timeline has been initialize - show it
@@ -129,11 +137,20 @@ jQuery(document).ready(function($){
 		setTransformValue(filling.get(0), 'scaleX', scaleValue);
 	}
 
+	// function setSkillPositions(timelineComponents) {
+	// 	for(i=0; i<timelineComponents['dates'].length; i++) {
+	// 		var distance = daydiff(timelineComponents['dates'][0], timelineComponents['dates'][i]),
+	// 				distanceNorm = Math.round(distance/timelineComponents['minLapse']);
+	//
+	// 		timelineComponents['skills'].eq(i).css('left', ((distanceNorm*15) + 10)+'%');
+	// 	}
+	// }
+
 	function setDatePosition(timelineComponents) {
 		for (i = 0; i < timelineComponents['timelineDates'].length; i++) {
 		    var distance = daydiff(timelineComponents['timelineDates'][0], timelineComponents['timelineDates'][i]),
 		    	distanceNorm = Math.round(distance/timelineComponents['eventsMinLapse']);
-		    timelineComponents['timelineEvents'].eq(i).css('left', ((distanceNorm*10) + 20)+'%');
+		    timelineComponents['timelineEvents'].eq(i).css('left', ((distanceNorm*15) + 10)+'%');
 		}
 	}
 
