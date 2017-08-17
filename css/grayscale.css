@@ -440,3 +440,19 @@ body {
   width: 30px;
   height: 30px;
 }
+
+.skill-bar {
+  height: 25px;
+  margin-bottom: 20px;
+}
+
+.skill {
+  position: absolute;
+  border-radius: 10px;
+  height: 25px;
+  background-color: white;
+  color: black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
