@@ -9,7 +9,7 @@ class TextScramble {
     this.update = this.update.bind(this);
   }
   setText(newText) {
-    const oldText = this.el.innerText;
+    const oldText = "";
     const length = Math.max(oldText.length, newText.length);
     const promise = new Promise(resolve => (this.resolve = resolve));
     this.queue = [];
@@ -71,12 +71,15 @@ const phrases = [
 
 ];
 
-const el = document.querySelector(".scramble-text");
-const fx = new TextScramble(el);
+const els = document.getElementsByClassName("scramble-text");
 
-let counter = 0;
-const next = () => {
-  fx.setText(phrases[counter]);
-};
+for(let i=0; i<els.length; i++) {
+  const fx = new TextScramble(els[i]);
 
-next();
+  let counter = 0;
+  const next = () => {
+    fx.setText(els[i].innerText);
+  };
+
+  next();
+}

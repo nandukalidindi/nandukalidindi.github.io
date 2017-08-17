@@ -52,17 +52,17 @@ a:focus {
   color: #1d9b6c;
 }
 .scramble-text {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-  -moz-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
-  font-family: 'Roboto Mono', monospace;
-  font-weight: 700;
-  font-size: 16px;
-  color: #fafafa;
-  pointer-events: none;
+  /*position: absolute;*/
+  /*top: 50%;*/
+  /*left: 50%;*/
+  /*-webkit-transform: translate(-50%, -50%);*/
+  /*-moz-transform: translate(-50%, -50%);*/
+  /*transform: translate(-50%, -50%);*/
+  /*font-family: 'Roboto Mono', monospace;*/
+  /*font-weight: 700;*/
+  /*font-size: 16px;*/
+  /*color: #fafafa;*/
+  /*pointer-events: none;*/
 }
 .light {
   font-weight: 400;
@@ -450,6 +450,7 @@ body {
   border-radius: 10px;
   height: 25px;
   background-color: white;
+  font-weight: bold;
   color: black;
   display: flex;
   align-items: center;
