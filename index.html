@@ -47,10 +47,7 @@ path {
 </head>
 
 <body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
-  <script src="js/d3.v3.min.js"></script>
   <!-- <script type="text/javascript" color="255,255,255" opacity='1.0' zIndex="1" count="150" src="js/canvas-nest.js"></script> -->
-  <!-- <div id="container" style="z-index:0; position: absolute; opacity: 0.7"></div> -->
-  <!-- <div class="scramble-text"></div> -->
     <!-- Navigation -->
     <nav class="navbar navbar-custom navbar-fixed-top" role="navigation">
         <div class="container">
@@ -99,17 +96,18 @@ path {
     <!-- <div id="container" style="z-index:0; position: absolute; opacity: 0.7"></div>     -->
 
     <!-- About Section -->
-    <section id="about" class="container content-section text-center">
-        <div class="row">
-            <div class="col-lg-8 col-lg-offset-2">
-                <p class="line-1 anim-typewriter">Welcome to my website, Bitch!</p>
-            </div>
-        </div>
+    <section id="about" class="">
+      <!-- <script src="js/d3.v3.min.js"></script> -->
+      <div id="draw-canvas-nest">
+      </div>
+      <script type="text/javascript" color="0,255,0" opacity='1.0' zIndex="1" count="150" src="js/canvas-nest.js"></script>
+      <div id="container" style="z-index:0; position: absolute; opacity: 0.7"></div>
+      <div class="scramble-text"></div>
     </section>
 
     <!-- Download Section -->
-    <section id="education" class="content-section text-center">
-        <div class="row download-section">
+    <section id="education" class="container content-section text-center">
+        <div class="row">
             <div class="container">
                 <div>
                     <h2>Education</h2>
@@ -176,13 +174,99 @@ path {
     </section>
 
     <!-- Contact Section -->
-    <section id="experience" class="container content-section text-center">
-      <div class="row" style="position: relative" id="experience-container">
+    <section id="experience" class="cd-horizontal-timeline container content-section text-center">
+      <h2>PROFESSIONAL EXPERIENCE</h2>
+      <div class="timeline">
+    		<div class="events-wrapper" id="timeline-root">
+    			<div class="events" style="width:100%;">
+    				<ol>
+    					<li><a href="#0" data-date="01/01/2012" class="selected">2012</a></li>
+    					<li><a href="#0" data-date="01/01/2013">2013</a></li>
+    					<li><a href="#0" data-date="01/01/2014">2014</a></li>
+    					<li><a href="#0" data-date="01/01/2016">2016</a></li>
+    					<li><a href="#0" data-date="01/01/2017">2017</a></li>
+    				</ol>
+
+    				<span class="filling-line" aria-hidden="true"></span>
+    			</div> <!-- .events -->
+    		</div> <!-- .events-wrapper -->
+    	</div> <!-- .timeline -->
+
+    	<div class="events-content">
+    		<ol>
+    			<li class="selected" data-date="01/01/2012">
+    				<h4>Indian Overseas Bank</h4>
+    				<em>January 16th, 2014</em>
+    				<p>
+    					Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum praesentium officia, fugit recusandae ipsa, quia velit nulla adipisci? Consequuntur aspernatur at, eaque hic repellendus sit dicta consequatur quae, ut harum ipsam molestias maxime non nisi reiciendis eligendi! Doloremque quia pariatur harum ea amet quibusdam quisquam, quae, temporibus dolores porro doloribus.
+    				</p>
+    			</li>
+
+    			<li data-date="01/01/2013">
+            <h4>Sabre Corporation</h4>
+    				<em>July 2013 - December 2013</em>
+    				<p>
+    					Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum praesentium officia, fugit recusandae ipsa, quia velit nulla adipisci? Consequuntur aspernatur at, eaque hic repellendus sit dicta consequatur quae, ut harum ipsam molestias maxime non nisi reiciendis eligendi! Doloremque quia pariatur harum ea amet quibusdam quisquam, quae, temporibus dolores porro doloribus.
+    				</p>
+
+    				<h4>Navyug Infosolutions</h4>
+    				<em>May 2013 - July 2013</em>
+    				<p>
+    					Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum praesentium officia, fugit recusandae ipsa, quia velit nulla adipisci? Consequuntur aspernatur at, eaque hic repellendus sit dicta consequatur quae, ut harum ipsam molestias maxime non nisi reiciendis eligendi! Doloremque quia pariatur harum ea amet quibusdam quisquam, quae, temporibus dolores porro doloribus.
+    				</p>
+    			</li>
+
+    			<li data-date="01/01/2014">
+    				<h4>Kaybus Inc (acquired by Prysm)</h4>
+    				<em>June 2014 - July 2016</em>
+    				<p>
+    					Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum praesentium officia, fugit recusandae ipsa, quia velit nulla adipisci? Consequuntur aspernatur at, eaque hic repellendus sit dicta consequatur quae, ut harum ipsam molestias maxime non nisi reiciendis eligendi! Doloremque quia pariatur harum ea amet quibusdam quisquam, quae, temporibus dolores porro doloribus.
+    				</p>
+    			</li>
+
+    			<li data-date="01/01/2016">
+    				<h4>Revmax</h4>
+    				<em>December 2016 - May 2017</em>
+    				<p>
+    					Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum praesentium officia, fugit recusandae ipsa, quia velit nulla adipisci? Consequuntur aspernatur at, eaque hic repellendus sit dicta consequatur quae, ut harum ipsam molestias maxime non nisi reiciendis eligendi! Doloremque quia pariatur harum ea amet quibusdam quisquam, quae, temporibus dolores porro doloribus.
+    				</p>
+    			</li>
+
+    			<li data-date="01/01/2017">
+    				<h4>NYU Mechanical and Aerospace Engineering</h4>
+    				<em>January 2017 - PRESENT</em>
+    				<p>
+    					Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum praesentium officia, fugit recusandae ipsa, quia velit nulla adipisci? Consequuntur aspernatur at, eaque hic repellendus sit dicta consequatur quae, ut harum ipsam molestias maxime non nisi reiciendis eligendi! Doloremque quia pariatur harum ea amet quibusdam quisquam, quae, temporibus dolores porro doloribus.
+    				</p>
+
+            <h4>ViDA NYU</h4>
+    				<em>June 2017 - September 2017</em>
+    				<p>
+    					Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum praesentium officia, fugit recusandae ipsa, quia velit nulla adipisci? Consequuntur aspernatur at, eaque hic repellendus sit dicta consequatur quae, ut harum ipsam molestias maxime non nisi reiciendis eligendi! Doloremque quia pariatur harum ea amet quibusdam quisquam, quae, temporibus dolores porro doloribus.
+    				</p>
+
+            <h4>Revmax</h4>
+    				<em>December 2016 - May 2017</em>
+    				<p>
+    					Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum praesentium officia, fugit recusandae ipsa, quia velit nulla adipisci? Consequuntur aspernatur at, eaque hic repellendus sit dicta consequatur quae, ut harum ipsam molestias maxime non nisi reiciendis eligendi! Doloremque quia pariatur harum ea amet quibusdam quisquam, quae, temporibus dolores porro doloribus.
+    				</p>
+    			</li>
+
+    			<li data-date="01/01/2018">
+    				<h2>Event title here</h2>
+    				<em>August 30th, 2014</em>
+    				<p>
+    					Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum praesentium officia, fugit recusandae ipsa, quia velit nulla adipisci? Consequuntur aspernatur at, eaque hic repellendus sit dicta consequatur quae, ut harum ipsam molestias maxime non nisi reiciendis eligendi! Doloremque quia pariatur harum ea amet quibusdam quisquam, quae, temporibus dolores porro doloribus.
+    				</p>
+    			</li>
+    		</ol>
+    	</div> <!-- .events-content -->
+      <!-- <div class="row" style="position: relative" id="experience-container; display: none"> -->
         <!-- <div id="experience-snippet" style="display:block">
           EXPERIENCE
         </div>
         <script src="js/label-d3.js"></script> -->
-        <div class="container">
+        <!-- <div class="container">
             <div>
                 <h2>PROFESSIONAL EXPERIENCE</h2>
                 <ul style="list-style:none; padding-left: 0px">
@@ -223,9 +307,9 @@ path {
                   </li>
                 </ul>
             </div>
-        </div>
+        </div> -->
 
-      </div>
+      <!-- </div> -->
     </section>
 
     <section id="projects" class="container content-section text-center">
@@ -346,9 +430,13 @@ path {
       </div>
     </section>
 
-    <section class="cd-horizontal-timeline">
-      <div style="margin-left: 64px; margin-right: 64px;">
-        <div id="skill-bars" style="position: relative; margin-left: 40px; margin-right: 40px; height: 450px">
+    <section id="skills" class="container content-section text-center">
+      <div class="row">
+        <h2>SKILLS</h2>
+        <div style="margin-left: 40px; margin-right: 40px;">
+          <img src="img/timeline.png" style="width: 100%"/>
+        </div>
+        <div id="skill-bars" style="position: relative; margin-left: 40px; margin-right: 40px; height: 550px">
           <!-- <div class="skill" data-date="01/05/2012" data-to="01/07/2012" style="left: 10%; position: absolute; width: 10%; height: 10px; background-color: white">
           </div>
 
@@ -363,13 +451,13 @@ path {
           </div> -->
 
           <div class="skill-bar">
-            <div class="skill" data-date="01/05/2012" data-to="01/07/2012" style="left: 18%; position: absolute; width: 2%; border-radius: 5px;">
+            <div class="skill" data-date="01/05/2012" data-to="01/07/2012" style="left: 18%; position: absolute; width: 2%; border-radius: 5px; background-color: green;">
             </div>
 
-            <div class="skill" data-date="01/05/2012" data-to="01/07/2012" style="left: 32%; position: absolute; width: 2%; border-radius: 5px;">
+            <div class="skill" data-date="01/05/2012" data-to="01/07/2012" style="left: 32%; position: absolute; width: 2%; border-radius: 5px; background-color: green;">
             </div>
 
-            <div class="skill" data-date="01/05/2012" data-to="01/07/2012" style="left: 40%; position: absolute; width: 60%;">
+            <div class="skill" data-date="01/05/2012" data-to="01/07/2012" style="left: 40%; position: absolute; width: 60%; background-color: green;">
               WEB DEVELOPMENT
             </div>
           </div>
@@ -404,128 +492,37 @@ path {
           </div>
 
           <div class="skill-bar">
-            <div class="skill" data-date="01/05/2012" data-to="01/07/2012" style="left: 40%; position: absolute; width: 50%;">
+            <div class="skill" data-date="01/05/2012" data-to="01/07/2012" style="left: 40%; position: absolute; width: 50%; background-color: red">
               RUBY ON RAILS
             </div>
           </div>
 
           <div class="skill-bar">
-            <div class="skill" data-date="01/05/2012" data-to="01/07/2012" style="left: 40%; position: absolute; width: 45%;">
+            <div class="skill" data-date="01/05/2012" data-to="01/07/2012" style="left: 40%; position: absolute; width: 45%; background-color: orange">
               EMBER JS
             </div>
           </div>
 
           <div class="skill-bar">
-            <div class="skill" data-date="01/05/2012" data-to="01/07/2012" style="left: 85%; position: absolute; width: 15%;">
+            <div class="skill" data-date="01/05/2012" data-to="01/07/2012" style="left: 85%; position: absolute; width: 15%; background-color: lightblue">
               REACTJS
             </div>
           </div>
 
           <div class="skill-bar">
-            <div class="skill" data-date="01/05/2012" data-to="01/07/2012" style="left: 85%; position: absolute; width: 10%;">
+            <div class="skill" data-date="01/05/2012" data-to="01/07/2012" style="left: 85%; position: absolute; width: 10%; background-color: orange">
               AWS
             </div>
           </div>
 
           <div class="skill-bar">
-            <div class="skill" data-date="01/05/2012" data-to="01/07/2012" style="left: 93%; position: absolute; width: 7%;">
+            <div class="skill" data-date="01/05/2012" data-to="01/07/2012" style="left: 93%; position: absolute; width: 7%; background-color: blue">
               DOCKER
             </div>
           </div>
 
         </div>
       </div>
-    	<div class="timeline">
-    		<div class="events-wrapper">
-    			<div class="events" style="width:100%;">
-    				<ol>
-    					<li><a href="#0" data-date="01/01/2012" class="selected">2012</a></li>
-    					<li><a href="#0" data-date="01/01/2013">2013</a></li>
-    					<li><a href="#0" data-date="01/01/2014">2014</a></li>
-    					<li><a href="#0" data-date="01/01/2016">2016</a></li>
-    					<li><a href="#0" data-date="01/01/2017">2017</a></li>
-    				</ol>
-
-    				<span class="filling-line" aria-hidden="true"></span>
-    			</div> <!-- .events -->
-    		</div> <!-- .events-wrapper -->
-    	</div> <!-- .timeline -->
-
-    	<div class="events-content">
-    		<ol>
-    			<li class="selected" data-date="01/01/2012">
-    				<h4>Indian Overseas Bank</h4>
-    				<em>January 16th, 2014</em>
-    				<p>
-    					Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum praesentium officia, fugit recusandae ipsa, quia velit nulla adipisci? Consequuntur aspernatur at, eaque hic repellendus sit dicta consequatur quae, ut harum ipsam molestias maxime non nisi reiciendis eligendi! Doloremque quia pariatur harum ea amet quibusdam quisquam, quae, temporibus dolores porro doloribus.
-    				</p>
-    			</li>
-
-    			<li data-date="01/01/2013">
-            <h4>Sabre Corporation</h4>
-    				<em>July 2013 - December 2013</em>
-    				<p>
-    					Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum praesentium officia, fugit recusandae ipsa, quia velit nulla adipisci? Consequuntur aspernatur at, eaque hic repellendus sit dicta consequatur quae, ut harum ipsam molestias maxime non nisi reiciendis eligendi! Doloremque quia pariatur harum ea amet quibusdam quisquam, quae, temporibus dolores porro doloribus.
-    				</p>
-
-    				<h4>Navyug Infosolutions</h4>
-    				<em>May 2013 - July 2013</em>
-    				<p>
-    					Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum praesentium officia, fugit recusandae ipsa, quia velit nulla adipisci? Consequuntur aspernatur at, eaque hic repellendus sit dicta consequatur quae, ut harum ipsam molestias maxime non nisi reiciendis eligendi! Doloremque quia pariatur harum ea amet quibusdam quisquam, quae, temporibus dolores porro doloribus.
-    				</p>
-    			</li>
-
-    			<li data-date="01/01/2014">
-    				<h4>Kaybus Inc (acquired by Prysm)</h4>
-    				<em>June 2014 - July 2016</em>
-    				<p>
-    					Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum praesentium officia, fugit recusandae ipsa, quia velit nulla adipisci? Consequuntur aspernatur at, eaque hic repellendus sit dicta consequatur quae, ut harum ipsam molestias maxime non nisi reiciendis eligendi! Doloremque quia pariatur harum ea amet quibusdam quisquam, quae, temporibus dolores porro doloribus.
-    				</p>
-    			</li>
-
-    			<li data-date="01/01/2016">
-    				<h4>Revmax</h4>
-    				<em>December 2016 - May 2017</em>
-    				<p>
-    					Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum praesentium officia, fugit recusandae ipsa, quia velit nulla adipisci? Consequuntur aspernatur at, eaque hic repellendus sit dicta consequatur quae, ut harum ipsam molestias maxime non nisi reiciendis eligendi! Doloremque quia pariatur harum ea amet quibusdam quisquam, quae, temporibus dolores porro doloribus.
-    				</p>
-    			</li>
-
-    			<li data-date="01/01/2017">
-    				<h4>NYU Mechanical and Aerospace Engineering</h4>
-    				<em>January 2017 - PRESENT</em>
-    				<p>
-    					Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum praesentium officia, fugit recusandae ipsa, quia velit nulla adipisci? Consequuntur aspernatur at, eaque hic repellendus sit dicta consequatur quae, ut harum ipsam molestias maxime non nisi reiciendis eligendi! Doloremque quia pariatur harum ea amet quibusdam quisquam, quae, temporibus dolores porro doloribus.
-    				</p>
-
-            <h4>ViDA NYU</h4>
-    				<em>June 2017 - September 2017</em>
-    				<p>
-    					Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum praesentium officia, fugit recusandae ipsa, quia velit nulla adipisci? Consequuntur aspernatur at, eaque hic repellendus sit dicta consequatur quae, ut harum ipsam molestias maxime non nisi reiciendis eligendi! Doloremque quia pariatur harum ea amet quibusdam quisquam, quae, temporibus dolores porro doloribus.
-    				</p>
-
-            <h4>Revmax</h4>
-    				<em>December 2016 - May 2017</em>
-    				<p>
-    					Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum praesentium officia, fugit recusandae ipsa, quia velit nulla adipisci? Consequuntur aspernatur at, eaque hic repellendus sit dicta consequatur quae, ut harum ipsam molestias maxime non nisi reiciendis eligendi! Doloremque quia pariatur harum ea amet quibusdam quisquam, quae, temporibus dolores porro doloribus.
-    				</p>
-    			</li>
-
-    			<li data-date="01/01/2018">
-    				<h2>Event title here</h2>
-    				<em>August 30th, 2014</em>
-    				<p>
-    					Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum praesentium officia, fugit recusandae ipsa, quia velit nulla adipisci? Consequuntur aspernatur at, eaque hic repellendus sit dicta consequatur quae, ut harum ipsam molestias maxime non nisi reiciendis eligendi! Doloremque quia pariatur harum ea amet quibusdam quisquam, quae, temporibus dolores porro doloribus.
-    				</p>
-    			</li>
-    		</ol>
-    	</div> <!-- .events-content -->
-    </section>
-
-    <section id="skills" class="container content-section text-center">
-        <div class="row">
-
-        </div>
     </section>
 
     <section id="contact" class="container content-section text-center">
@@ -575,8 +572,8 @@ path {
 
     <!-- Theme JavaScript -->
     <script src="js/grayscale.js"></script>
-    <!-- <script src="js/scramble.js"> </script> -->
-    <!-- <script src="js/particles.js"> </script> -->
+    <script src="js/scramble.js"> </script>
+    <script src="js/particles.js"> </script>
 
     <!-- <script src="js/jquery-2.1.4.js"></script> -->
     <script src="js/jquery.mobile.custom.min.js"></script>

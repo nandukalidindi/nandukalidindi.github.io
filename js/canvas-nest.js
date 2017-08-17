@@ -13,6 +13,7 @@
   function get_by_tagname(name) {
     return document.getElementsByTagName(name);
   }
+
   //获取配置参数
   function get_config_option() {
     var scripts = get_by_tagname("script"),
@@ -81,7 +82,7 @@
     all_array;
   the_canvas.id = canvas_id;
   the_canvas.style.cssText = "top:0;left:0;z-index:" + config.z + ";opacity:" + config.o;
-  get_by_tagname("body")[0].appendChild(the_canvas);
+  document.getElementById("draw-canvas-nest").appendChild(the_canvas);
 
   //初始化画布大小
   set_canvas_size();

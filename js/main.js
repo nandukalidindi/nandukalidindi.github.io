@@ -7,6 +7,7 @@ jQuery(document).ready(function($){
 	function initTimeline(timelines) {
 		timelines.each(function(){
 			var timeline = $(this),
+					clickInterval = null,
 				timelineComponents = {};
 			//cache timeline components
 			timelineComponents['timelineWrapper'] = timeline.find('.events-wrapper');
@@ -43,9 +44,11 @@ jQuery(document).ready(function($){
 				event.preventDefault();
 				updateSlide(timelineComponents, timelineTotWidth, 'prev');
 			});
+
 			//detect click on the a single event - show new event content
 			timelineComponents['eventsWrapper'].on('click', 'a', function(event){
 				event.preventDefault();
+				event.stopPropagation();
 				timelineComponents['timelineEvents'].removeClass('selected');
 				$(this).addClass('selected');
 				updateOlderEvents($(this));
@@ -71,6 +74,17 @@ jQuery(document).ready(function($){
 					showNewContent(timelineComponents, timelineTotWidth, 'next');
 				}
 			});
+
+			var count = 1;
+
+			// clickInterval = setInterval(function() {
+			// 	timelineComponents['timelineEvents'][count % timelineComponents['timelineEvents'].length].click();
+			// 	count++;
+			// }, 1000);
+
+			document.getElementById("timeline-root").addEventListener('click', function(event) {
+				clearInterval(clickInterval);
+			})
 		});
 	}
 
