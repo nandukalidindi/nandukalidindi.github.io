@@ -81,7 +81,7 @@ Main Components
   z-index: 1;
   left: 0;
   top: 49px;
-  height: 2px;
+  height: 5px;
   /* width will be set using JavaScript */
   background: #dfdfdf;
   -webkit-transition: -webkit-transform 0.4s;
@@ -137,9 +137,9 @@ Main Components
   -ms-transform: translateX(-50%);
   -o-transform: translateX(-50%);
   transform: translateX(-50%);
-  bottom: -5px;
-  height: 12px;
-  width: 12px;
+  bottom: -6px;
+  height: 18px;
+  width: 18px;
   border-radius: 50%;
   border: 2px solid #dfdfdf;
   background-color: #f8f8f8;

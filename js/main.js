@@ -1,13 +1,13 @@
 jQuery(document).ready(function($){
 	var timelines = $('.cd-horizontal-timeline'),
-		eventsMinDistance = 120;
+			eventsMinDistance = 120,
+			clickInterval = null;
 
 	(timelines.length > 0) && initTimeline(timelines);
 
 	function initTimeline(timelines) {
 		timelines.each(function(){
 			var timeline = $(this),
-					clickInterval = null,
 				timelineComponents = {};
 			//cache timeline components
 			timelineComponents['timelineWrapper'] = timeline.find('.events-wrapper');
@@ -75,17 +75,34 @@ jQuery(document).ready(function($){
 				}
 			});
 
-			var count = 1;
+			startSlider(timelineComponents);
 
-			// clickInterval = setInterval(function() {
-			// 	timelineComponents['timelineEvents'][count % timelineComponents['timelineEvents'].length].click();
-			// 	count++;
-			// }, 1000);
+			// document.getElementById("timeline-root").addEventListener('click', function(event) {
+			// 	clearInterval(clickInterval);
+			// })
 
-			document.getElementById("timeline-root").addEventListener('click', function(event) {
-				clearInterval(clickInterval);
+			document.getElementById("stop-animation").addEventListener('click', function(event) {
+				if(event.target.innerText === "STOP") {
+					event.target.innerText = "START"
+					clearInterval(clickInterval);
+				} else {
+					clearInterval(clickInterval);
+					event.target.innerText = "STOP";
+					startSlider(timelineComponents);
+				}
+
 			})
 		});
+	}
+
+	function startSlider(timelineComponents) {
+		var count = 3;
+
+		clickInterval = setInterval(function() {
+			var events = $($('.cd-horizontal-timeline')[0]).find('.events-wrapper').children('.events').find('a');
+			events[count % events.length].click();
+			count++;
+		}, 1000);
 	}
 
 	function updateSlide(timelineComponents, timelineTotWidth, string) {

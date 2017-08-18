@@ -456,3 +456,36 @@ body {
   align-items: center;
   justify-content: center;
 }
+
+.ruby-animation {
+  animation: ruby 2s linear both;
+}
+
+@keyframes ruby {
+  from { width: 5% }
+  to { width: 52% }
+}
+
+.company-date {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+.company-date h4 h5{
+  margin-bottom: 0px !important;
+}
+
+.stop-button {
+  position: absolute;
+  bottom: 0px;
+  margin-bottom: 15px;
+  background-color: red;
+  height: 20px;
+  width: 50px;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  justify-content: center;
+}
