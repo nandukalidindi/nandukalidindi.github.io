@@ -1,6 +1,6 @@
 // CODE COURTRSY JUSTIN WINDLE (HE IS AWESOME)
 
-var NUM_PARTICLES = ( ( ROWS = 140 ) * ( COLS = 255 ) ),
+var NUM_PARTICLES = ( ( ROWS = 125 ) * ( COLS = 255 ) ),
     THICKNESS = Math.pow( 80, 3 ),
     SPACING = 5,
     MARGIN = 100,
@@ -70,14 +70,16 @@ function init() {
     list[i] = p;
   }
 
-  // container.addEventListener( 'mousemove', function(e) {
-  //
-  //   bounds = container.getBoundingClientRect();
-  //   mx = e.clientX - bounds.left;
-  //   my = e.clientY - bounds.top;
-  //   man = true;
-  //
-  // });
+  container.addEventListener('click', function(e) {
+    container.addEventListener( 'mousemove', function(e) {
+
+      bounds = container.getBoundingClientRect();
+      mx = e.clientX - bounds.left;
+      my = e.clientY - bounds.top;
+      man = true;
+
+    });
+  });
 
   if ( typeof Stats === 'function' ) {
     document.body.appendChild( ( stats = new Stats() ).domElement );
