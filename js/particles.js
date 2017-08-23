@@ -1,7 +1,7 @@
 // CODE COURTRSY JUSTIN WINDLE (HE IS AWESOME)
 
 var NUM_PARTICLES = ( ( ROWS = 125 ) * ( COLS = 255 ) ),
-    THICKNESS = Math.pow( 80, 3 ),
+    THICKNESS = Math.pow( 80, 2.5 ),
     SPACING = 5,
     MARGIN = 100,
     COLOR = 220,
@@ -71,14 +71,17 @@ function init() {
   }
 
   container.addEventListener('click', function(e) {
-    container.addEventListener( 'mousemove', function(e) {
+    var onMouseMove = function(e) {
 
       bounds = container.getBoundingClientRect();
       mx = e.clientX - bounds.left;
       my = e.clientY - bounds.top;
       man = true;
 
-    });
+    };
+    document.getElementById('disrupt-continuum').remove();
+    container.removeEventListener('mousemove', onMouseMove, true);
+    container.addEventListener('mousemove', onMouseMove);
   });
 
   if ( typeof Stats === 'function' ) {
