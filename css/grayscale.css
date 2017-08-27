@@ -490,6 +490,10 @@ body {
   margin-bottom: 0px !important;
 }
 
+#skill-bars {
+  font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
 .stop-button {
   position: absolute;
   bottom: 0px;
