@@ -1,6 +1,6 @@
 // CODE COURTRSY JUSTIN WINDLE (HE IS AWESOME)
 
-var NUM_PARTICLES = ( ( ROWS = 133 ) * ( COLS = 257 ) ),
+var NUM_PARTICLES = ( ( ROWS = 140 ) * ( COLS = 257 ) ),
     THICKNESS = Math.pow( 80, 2.70 ),
     SPACING = 5,
     MARGIN = 100,
@@ -57,6 +57,8 @@ function init() {
 
   w = canvas.width = COLS * SPACING + MARGIN * 2;
   h = canvas.height = ROWS * SPACING + MARGIN * 2;
+
+  canvas.height = canvas.height - 50;
 
   container.style.marginLeft = Math.round( w * -0.5 ) + 'px';
   container.style.marginTop = Math.round( h * -0.5 ) + 'px';
