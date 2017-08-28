@@ -515,3 +515,12 @@ body {
   cursor: pointer;
   justify-content: center;
 }
+
+.arrows {
+  animation: arrow-downward 2s linear;
+}
+
+@keyframes arrow-downward {
+  from {  }
+  to { bottom: 10px }
+}
