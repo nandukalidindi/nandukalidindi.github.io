@@ -1,6 +1,6 @@
 // CODE COURTRSY JUSTIN WINDLE (HE IS AWESOME)
 
-var NUM_PARTICLES = ( ( ROWS = 137 ) * ( COLS = 257 ) ),
+var NUM_PARTICLES = ( ( ROWS = 133 ) * ( COLS = 257 ) ),
     THICKNESS = Math.pow( 80, 2.5 ),
     SPACING = 5,
     MARGIN = 100,

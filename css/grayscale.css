@@ -436,17 +436,25 @@ body {
 }
 
 .project-description {
-  font-size: 16px;
+  font-size: 14px;
   height: 60%;
+  font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
 .project-link {
   margin-bottom: 0px;
   cursor: pointer;
+  font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
 .project-title {
   display: flex;
+}
+
+.project-title h4 {
+  margin-bottom: 0px;
+  margin-top: 5px;
+  color: #42DCA3
 }
 
 .framework-icons {
