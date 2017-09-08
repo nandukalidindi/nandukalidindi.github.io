@@ -72,7 +72,7 @@ function init() {
     list[i] = p;
   }
 
-  container.addEventListener('click', function(e) {
+  // container.addEventListener('click', function(e) {
     var onMouseMove = function(e) {
 
       bounds = container.getBoundingClientRect();
@@ -81,14 +81,14 @@ function init() {
       man = true;
 
     };
-    document.getElementById('disrupt-continuum').remove();
+    // document.getElementById('disrupt-continuum').remove();
     container.removeEventListener('mousemove', onMouseMove, true);
     container.addEventListener('mousemove', onMouseMove);
-    setTimeout(function() {
-      var element = document.getElementById("about-me");
-      element.style.display = 'flex';
-    }, 1500);
-  });
+    // setTimeout(function() {
+    //   var element = document.getElementById("about-me");
+    //   element.style.display = 'flex';
+    // }, 1500);
+  // });
 
   if ( typeof Stats === 'function' ) {
     document.body.appendChild( ( stats = new Stats() ).domElement );
